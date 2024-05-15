@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tutorial: Understanding the URL Validation Pattern</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .author {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Tutorial: Understanding the URL Validation Pattern</h1>
+        <p>Welcome to this tutorial on regex (regular expressions). In this guide, we'll break down a specific regex pattern used to validate URLs. By the end of this tutorial, you will understand how this pattern works and how to apply it in your web development projects.</p>
+        
+        <h2>Summary</h2>
+        <p>The regex pattern we'll be discussing is commonly used to validate URLs. Here's the pattern:</p>
+        <code>^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$</code>
+        <p>This pattern ensures that the input follows the standard URL format, including the protocol, domain, and optional path.</p>
+        
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#anchors">Anchors</a></li>
+            <li><a href="#quantifiers">Quantifiers</a></li>
+            <li><a href="#or-operator">OR Operator</a></li>
+            <li><a href="#character-classes">Character Classes</a></li>
+            <li><a href="#flags">Flags</a></li>
+            <li><a href="#grouping-and-capturing">Grouping and Capturing</a></li>
+            <li><a href="#bracket-expressions">Bracket Expressions</a></li>
+            <li><a href="#greedy-and-lazy-match">Greedy and Lazy Match</a></li>
+            <li><a href="#boundaries">Boundaries</a></li>
+            <li><a href="#back-references">Back-references</a></li>
+            <li><a href="#look-ahead-and-look-behind">Look-ahead and Look-behind</a></li>
+            <li><a href="#author">Author</a></li>
+        </ul>
+        
+        <h2 id="anchors">Anchors</h2>
+        <h3>^ and $</h3>
+        <p>The caret <code>^</code> at the beginning and the dollar sign <code>$</code> at the end are called anchors. They ensure that the entire string is matched from the start to the end.</p>
+        
+        <h2 id="quantifiers">Quantifiers</h2>
+        <h3>?</h3>
+        <p>The <code>?</code> quantifier indicates that the preceding element (in this case, <code>s</code>) is optional, appearing 0 or 1 time.</p>
+        
+        <h2 id="or-operator">OR Operator</h2>
+        <h3>|</h3>
+        <p>The OR operator <code>|</code> is used to match either of the patterns separated by it. In our regex, it matches either <code>http</code> or <code>https</code>.</p>
+        
+        <h2 id="character-classes">Character Classes</h2>
+        <h3>[^\s/$.?#]</h3>
+        <p>Character classes match any one of a set of characters. The character class <code>[^\s/$.?#]</code> matches any character except whitespace characters, <code>/</code>, <code>.</code>, <code>$</code>, <code>?</code>, and <code>#</code>.</p>
+        
+        <h2 id="flags">Flags</h2>
+        <p>Flags are optional parameters that modify the behavior of the regex. Common flags include <code>i</code> for case-insensitive matching and <code>g</code> for global matching. Our regex does not use any flags.</p>
+        
+        <h2 id="grouping-and-capturing">Grouping and Capturing</h2>
+        <h3>(https?|ftp)</h3>
+        <p>Grouping allows us to treat part of a regex as a single unit. In our regex, <code>(https?|ftp)</code> groups the protocols so that the <code>|</code> operator can apply to all of them.</p>
+        
+        <h2 id="bracket-expressions">Bracket Expressions</h2>
+        <h3>[^\s/$.?#]</h3>
+        <p>Bracket expressions (character classes) match any one of the characters inside the brackets. In our regex, <code>[^\s/$.?#]</code> is a negated character class that matches any character except those listed.</p>
+        
+        <h2 id="greedy-and-lazy-match">Greedy and Lazy Match</h2>
+        <h3>[^\s]*$</h3>
+        <p>Greedy quantifiers match as much of the input as possible, while lazy quantifiers match as little as possible. Our regex uses a greedy match by default.</p>
+        
+        <h2 id="boundaries">Boundaries</h2>
+        <p>Boundaries match a position, not a character. The <code>\b</code> boundary matches a word boundary. Our regex does not explicitly use word boundaries.</p>
+        
+        <h2 id="back-references">Back-references</h2>
+        <p>Back-references match the same text as previously matched by a capturing group. Our regex does not use back-references.</p>
+        
+        <h2 id="look-ahead-and-look-behind">Look-ahead and Look-behind</h2>
+        <p>Look-ahead and look-behind assertions check for a match without including it in the result. Our regex does not use these assertions.</p>
+        
+        <h2 id="author">Author</h2>
+        <p>This tutorial was created by <a href="https://github.com/Tabi-Led"></a>, a web development enthusiast and regex aficionado. You can find more of my work on my <a href="https://github.com/yourusername">GitHub profile</a>.</p>
+    </div>Tabitha Ledford
+</body>
+</html>

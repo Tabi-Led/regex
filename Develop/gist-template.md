@@ -160,4 +160,6 @@ Valid: abc123
 Invalid: abcdef
 ## Author
 
-This tutorial was created by Tabitha Ledford, a student at the Coding BootCamp hosted by the University of Minnesota
+This tutorial was created by Tabitha Ledford, a student at the Coding BootCamp hosted by the University of Minnesota. 
+
+https://github.com/Tabi-Led
